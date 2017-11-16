@@ -51,8 +51,7 @@ const mutations = {
     state.todo_items = Array
   },
   toggle(state, payload) {
-    const index = state.todo_items.findIndex((item) => item.id === payload.item.id)
-    state.todo_items[index].finished_at = payload.finished_item.finished_at
+    payload.item.finished_at = payload.finished_item.finished_at
   }
 }
 
