@@ -21,7 +21,7 @@
   export default {
     methods: {
       open() {
-        Notification.success({title: 'test'})
+        Notification.success({ title: 'test' })
       },
 
       open2() {
@@ -29,7 +29,7 @@
           title: 'Prompt',
           message: 'This is a message that does not automatically close',
           duration: 0
-        });
+        })
       }
     }
   }
