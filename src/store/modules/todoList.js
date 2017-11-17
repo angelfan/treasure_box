@@ -40,7 +40,7 @@ const mutations = {
     state.todo_items = payload.todo_items
   },
   addItem(state, payload) {
-    state.todo_items.push(payload.item)
+    state.todo_items.unshift(payload.item)
     state.item = Object
   },
   deleteItem(state, payload) {
